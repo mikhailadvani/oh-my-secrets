@@ -2,7 +2,10 @@
 - hosts: localhost
   vars_files:
   - config/default.yml
+  - config/secrets.yml
   tasks:
   - debug: var={{item}}
     with_items:
     - server_url
+    - server_username
+    - server_password

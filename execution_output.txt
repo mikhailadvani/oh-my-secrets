@@ -9,6 +9,14 @@ ok: [localhost] => (item=server_url) => {
     "item": "server_url", 
     "server_url": "http://server.url.com"
 }
+ok: [localhost] => (item=server_username) => {
+    "item": "server_username", 
+    "server_username": "user"
+}
+ok: [localhost] => (item=server_password) => {
+    "item": "server_password", 
+    "server_password": "password"
+}
 
 PLAY RECAP *********************************************************************
 localhost                  : ok=2    changed=0    unreachable=0    failed=0   
