@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  vars_files:
+  - config/default.yml
+  tasks:
+  - debug: var={{item}}
+    with_items:
+    - server_url

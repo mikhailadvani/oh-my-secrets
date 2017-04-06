@@ -1,0 +1,15 @@
+
+PLAY [localhost] ***************************************************************
+
+TASK [setup] *******************************************************************
+ok: [localhost]
+
+TASK [debug] *******************************************************************
+ok: [localhost] => (item=server_url) => {
+    "item": "server_url", 
+    "server_url": "http://server.url.com"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+
