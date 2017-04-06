@@ -1,1 +1,1 @@
-ansible-playbook sample_playbook.yml
+ansible-playbook sample_playbook.yml --vault-password-file vault.key
